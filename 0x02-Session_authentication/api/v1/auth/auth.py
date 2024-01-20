@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-""" Module of Authentication
+"""
+Module of Authentication
 """
 from flask import request
 from typing import List, TypeVar
@@ -32,7 +33,8 @@ class Auth:
     def current_user(self, request=None) -> TypeVar('User'):
         """ Validates current user """
         return None
-        def current_user(self, request=None) -> TypeVar('User'):
+
+    def current_user(self, request=None) -> TypeVar('User'):
         """ Validates current user """
         return None
 
@@ -44,4 +46,3 @@ class Auth:
         cookie_key = getenv('SESSION_NAME')
 
         return request.cookies.get(cookie_key)
-

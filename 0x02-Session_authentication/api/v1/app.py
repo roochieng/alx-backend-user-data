@@ -56,7 +56,6 @@ def not_found(error) -> str:
     return jsonify({"error": "Not found"}), 404
 
 
-
 @app.before_request
 def before_request() -> str:
     """
